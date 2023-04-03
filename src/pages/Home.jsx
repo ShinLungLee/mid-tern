@@ -8,7 +8,9 @@ function Home() {
         logo="Concis" 
         />
       <ProductList className="layout-content" />
-      <Footer className="layout-footer" />
+      <Footer 
+        customerservice="客服專線 02-0000-1234   服務時間 1000-1900"
+                copyright="copyright ------------------" />
     </div>
   );
 }
