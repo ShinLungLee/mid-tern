@@ -24,8 +24,8 @@ export default function Footer({ customerservice, copyright }) {
             >
             <ul className={styles.footerList}>
               <li className={styles.footerItem}><a href="" className={styles.footerLink}><i className="fab fa-facebook-f"></i></a></li>
-              <li className={styles.footerItem}><a href="" className={styles.footerLink}><i className="fab fa-google-plus-g"></i></a></li>
-              <li className={styles.footerItem}><a href="" className={styles.footerLink}><i className="fab fa-linkedin-in"></i></a></li>
+              <li className={styles.footerItem}><a href="" className={styles.footerLink}><i className="fab fa-instagram"></i></a></li>
+              <li className={styles.footerItem}><a href="" className={styles.footerLink}><i className="fab fa-twitter"></i></a></li>
             </ul>
             </Col>
            
