@@ -3,16 +3,16 @@
     color: rgb(105, 23, 182);
     padding-top: 3rem!important;
     padding-bottom: 3rem!important;
-   
   }
   h5{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
-  
+.container{
+  padding: 0 5%;
+}
   .footerDescription {
     margin: 0;
     padding: 0 30px;
-  
     padding-bottom: 30px;
     align-self: center;
   }

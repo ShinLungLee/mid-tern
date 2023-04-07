@@ -2,19 +2,19 @@ import styles from './footer.module.css'
 import { Row, Col } from "antd";
 import '../../App.css';
 
-export default function Footer({ customerservice, copyright }) {
+export default function Footer({ customerservice }) {
   return (
-    <footer className={styles.footer}>
+    <footer>
       <div className={styles.footerAbove}>
-        <div className="container">
-          <Row gutter={[100,100]}>
+        <div className={styles.container}>
+          <Row gutter={[50,50]}>
             <Col
-                 sm={{span:24}}
+                sm={{span:24}}
                 lg={{span:16}}
             >
             <h5 className={styles.footerDescription}>
-                {customerservice}<br></br>
-                {copyright}
+                {customerservice}
+                
             </h5>
             </Col>
 
