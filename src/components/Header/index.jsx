@@ -1,6 +1,6 @@
 import styles from "./header.module.css";
 import '../../App.css';
-import CarSummary from "../CarSummary"; '../CarSummary';
+import CarSummary from "../CarSummary";
 import MemberSummary from "../MemberSummary";
 
 export default function Header({ logo }) {
@@ -9,7 +9,10 @@ export default function Header({ logo }) {
             <h1 className={styles.headerlogo}>{logo}
             </h1>
             <div className={styles.search}>
-                <input className="search-bar" type="text" name="search" id="search" placeholder="輸入名稱" />
+                <input className={styles.searchbar} type="text" name="search" id="search" placeholder="輸入欲搜尋的商品" />
+                <button className={styles.searchbtn}>
+                    <i className="fas fa-search"></i>
+                </button>
             </div>
             <MemberSummary />
             <CarSummary />

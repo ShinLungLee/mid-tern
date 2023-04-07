@@ -3,7 +3,7 @@ import ProductList from "../components/ProductList"
 import Footer from "../components/Footer"
 function Home() {
   return (
-    <div >
+    <div className="container main-layout">
       <Header 
         logo="Concis" 
         />
