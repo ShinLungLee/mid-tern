@@ -17,19 +17,7 @@
  
  .name {
     color: white;
-    margin-bottom: 0.5rem;
- }
- 
- .description {
-    color: white;
-    opacity: 0.6;
-    margin-bottom: 1rem;
- }
- 
- .link {
-    text-decoration: none;
-    align-self: center;
-    color: #8183ff;
+    margin-bottom: 0.3rem;
  }
  
  .textGray {

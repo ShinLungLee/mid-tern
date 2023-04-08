@@ -18,18 +18,10 @@ export default function ProductItem({ product }) {
             <h2 className={style.name}>
                {product.name}
             </h2>
-            <p className={style.description}>
-               {product.description}
-            </p>
-            <div className={style.more}>
-               <a href="/" className={style.link}>
-                  See More ...
-               </a>
-               <span
-                  className={style.textGray}>
-                  USD {product.price}.00
-               </span>
-            </div>
+            <span className={style.textGray}>
+               NTD {product.price}.00
+            </span>
+            
          </div>
       </div>
    );

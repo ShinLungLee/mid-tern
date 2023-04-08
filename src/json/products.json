@@ -1,90 +1,82 @@
 [
   {
     "id": "1tE4nK",
-    "category": "",
-    "name": "",
+    "category": "手機通訊",
+    "name": "耳機",
     "sku": "sku_313355",
     "price": 76,
     "image": "/images/image1.jpg",
     "description": "",
-    "description_long": "",
-    "currency": ""
+    "currency": "NTD"
   },
   {
     "id": "IuFGYl",
-    "category": "",
-    "name": "",
+    "category": "電玩遊戲",
+    "name": "搖桿",
     "sku": "sku_313356",
-    "price": 6,
+    "price": 670,
     "image": "/images/image2.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "VfcByl",
-    "category": "",
-    "name": "",
+    "category": "衣物配件",
+    "name": "素色上衣",
     "sku": "sku_622147",
-    "price": 6,
+    "price": 150,
     "image": "/images/image3.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "1yF2Ib",
-    "category": "",
-    "name": "",
+    "category": "生活居家",
+    "name": "桌子",
     "sku": "sku_125983",
-    "price": 6,
+    "price": 428,
     "image": "/images/image4.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "x5m8g3",
-    "category": "",
-    "name": "",
+    "category": "公仔玩具",
+    "name": "鯊魚玩偶",
     "sku": "sku_559961",
-    "price": 6,
+    "price": 99,
     "image": "/images/image5.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "6Bh3pq",
-    "category": "",
-    "name": "",
+    "category": "電腦電子",
+    "name": "麵包板",
     "sku": "sku_119140",
-    "price": 6,
+    "price": 73,
     "image": "/images/image6.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "nfogfp",
-    "category": "",
-    "name": "",
+    "category": "書籍雜誌",
+    "name": "網頁工具書",
     "sku": "sku_119140",
-    "price": 6,
+    "price": 399,
     "image": "/images/image7.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   },
   {
     "id": "poejp5",
-    "category": "",
-    "name": "",
+    "category": "休閒旅遊",
+    "name": "油燈",
     "sku": "sku_119140",
-    "price": 6,
+    "price": 88,
     "image": "/images/image8.jpg",
     "description": "",
-    "description_long": "",
-    "currency": "USD"
+    "currency": "NTD"
   }
 ]
