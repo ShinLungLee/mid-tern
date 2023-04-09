@@ -4,10 +4,7 @@ import styles from './navbar.module.css';
 export default function NavBar() {
     return (
         <div className={styles.navBar}>
-            <NavLink to="/products/category/所有分類"
-                className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
-                所有分類
-            </NavLink>
+
             <NavLink to="/products/category/手機通訊"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 手機通訊

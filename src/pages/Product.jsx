@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import NavBar from "../components/NavBar";
 import ProductDetail from '../components/ProductDetail';
 import products from "../json/products.json";
 function Product() {
@@ -15,7 +14,7 @@ function Product() {
             <Header
                 logo="Concis"
             />
-            <NavBar />
+
             <ProductDetail product={product} className="layout-content" />
             <Footer
                 customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />

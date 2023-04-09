@@ -7,6 +7,7 @@ import MemberSummary from "../MemberSummary";
 
 export default function Header({ logo }) {
     return (
+        <div>
         <div className={styles.header}>
                 <h1 className={styles.headerlogo}>
                     {logo}
@@ -19,7 +20,8 @@ export default function Header({ logo }) {
             </div>
             <MemberSummary />
             <CarSummary />
-            <br></br>
+        </div>
+        <NavBar/>
         </div>
     );
 }
