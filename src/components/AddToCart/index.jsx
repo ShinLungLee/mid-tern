@@ -1,13 +1,22 @@
 import { Button } from "antd"
+import { useDispatch } from "react-redux";
+import { addCartItems } from "../../redux/cartSlice";
+import styles from "./addtocart.module.css"
 
-export default function AddToCart() {
-
+export default function AddToCart({ product, qty }) {
+  const dispatch = useDispatch();
+  const addToCart = () => {
+    dispatch(addCartItems({
+      id: product.id,
+      name: product.name,
+      image: product.image,
+      price: product.price,
+      countInStock: product.countInStock,
+      qty,
+    }))
+  };
   return (
-    <Button type="primary" style={{
-      height: 'auto',
-      fontSize: '1.2rem',
-      padding: '0.5rem 2rem',
-    }}>
+    <Button type="primary" className={styles.btn} onClick={addToCart}>
       Add To Cart
     </Button>
   );

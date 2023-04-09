@@ -1,9 +1,12 @@
-import { Row, Col } from "antd";
+import { useState } from "react";
+import { Row, Col ,Select } from "antd";
 import AddToCart from "../AddToCart"
 import styles from "./productdetail.module.css"
+const { Option } = Select;
 
 function ProductDetail({ product }) {
-
+    const [qty, setQty] = useState(product.countInStock > 0 ? 1 : 0);
+    
     return (
         <Row gutter={[32, 32]}
             style={{ justifyContent: 'center' }}
@@ -36,7 +39,27 @@ function ProductDetail({ product }) {
                         <p className={styles.price} >
                             NTD${product.price}.00
                         </p>
-                        <AddToCart />
+                        <p className={styles.status}>
+                     貨態: {product.countInStock > 0 ? "有貨" : "缺貨"}
+                  </p>
+                  <div className={styles.qty}>
+                     數量: {"   "}
+                     <Select
+                        defaultValue={qty}
+                        key={qty}                          
+                        className={styles.selectStyle}
+                        onChange={val => setQty(val)}
+                     >
+                        {[...Array(product.countInStock).keys()].map((x) => (
+                            <Option key={x + 1} value={x + 1}>{x + 1}
+                            </Option>
+                        ))}
+                     </Select>
+                    </div>
+                    <p className={styles.qty}>
+                     總價: {product.price * qty}
+                    </p>
+                    <AddToCart />
                     </div>
                 </div>
             </Col>
