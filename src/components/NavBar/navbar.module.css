@@ -6,7 +6,7 @@
     justify-content: space-around;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    max-height: 50px;
+    max-height: auto;
 }
 
 .navItem {

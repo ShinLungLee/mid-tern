@@ -7,7 +7,7 @@ import { CarIcon } from "./Icons";
 import { selectCartItems } from "../../redux/cartSlice";
 const { Option } = Select;
 
-export default function CarModal(isOpen, toggleModal) {
+export default function CarModal({isOpen, toggleModal}) {
   const dispatch = useDispatch();
   const cartItems = useSelector(selectCartItems);
   const handleCancel = () => toggleModal(!isOpen);
