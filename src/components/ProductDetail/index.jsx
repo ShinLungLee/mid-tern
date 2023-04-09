@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Row, Col ,Select } from "antd";
 import AddToCart from "../AddToCart"
-import styles from "./productdetail.module.css"
+import style from "./productdetail.module.css"
 const { Option } = Select;
 
 function ProductDetail({ product }) {
@@ -17,7 +17,7 @@ function ProductDetail({ product }) {
             >
                 <img
                     alt={product.name}
-                    className={styles.image}
+                    className={style.image}
                     src={product.image}
                 />
             </Col>
@@ -25,29 +25,29 @@ function ProductDetail({ product }) {
                 xs={{ span: 24 }}
                 lg={{ span: 14 }}
             >
-                <div className={styles.info} >
-                    <h2 className={styles.category} >
+                <div className={style.info} >
+                    <h2 className={style.category} >
                         {product.category}
                     </h2>
-                    <h1 className={styles.name} >
+                    <h1 className={style.name} >
                         {product.name}
                     </h1>
-                    <p className={styles.description}>
+                    <p className={style.description}>
                         {product.description}
                     </p>
-                    <div className={styles.wrap}>
-                        <p className={styles.price} >
+                    <div className={style.wrap}>
+                        <p className={style.price} >
                             NTD${product.price}.00
                         </p>
-                        <p className={styles.status}>
+                        <p className={style.status}>
                      貨態: {product.countInStock > 0 ? "有貨" : "缺貨"}
                   </p>
-                  <div className={styles.qty}>
+                  <div className={style.qty}>
                      數量: {"   "}
                      <Select
                         defaultValue={qty}
                         key={qty}                          
-                        className={styles.selectStyle}
+                        className={style.selectStyle}
                         onChange={val => setQty(val)}
                      >
                         {[...Array(product.countInStock).keys()].map((x) => (
@@ -56,7 +56,7 @@ function ProductDetail({ product }) {
                         ))}
                      </Select>
                     </div>
-                    <p className={styles.qty}>
+                    <p className={style.qty}>
                      總價: {product.price * qty}
                     </p>
                     <AddToCart product={product} qty={qty} />
