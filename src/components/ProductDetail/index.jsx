@@ -59,7 +59,7 @@ function ProductDetail({ product }) {
                     <p className={styles.qty}>
                      總價: {product.price * qty}
                     </p>
-                    <AddToCart />
+                    <AddToCart product={product} qty={qty} />
                     </div>
                 </div>
             </Col>
