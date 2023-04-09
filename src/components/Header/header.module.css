@@ -1,55 +1,57 @@
-.header{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    background-color:  rgb(239, 200, 152);
-    text-align: center;
-}
-.headerlogo{
-    position: relative;
-    font-size: 3em;
-    color:rgb(105, 23, 182);
-    font-family: Georgia, Helvetica, Impact;
-    padding: 0 0 0 5%;
-    padding-top: 1rem;
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(239, 200, 152);
+  text-align: center;
 }
 
-  a {
-    text-decoration: none;
-    color: #3d1101;
-  }
+.headerlogo {
+  position: relative;
+  font-size: 3em;
+  color: rgb(105, 23, 182);
+  font-family: Georgia, Helvetica, Impact;
+  padding: 0 0 0 5%;
+  padding-top: 1rem;
+}
 
-  .search {
-    position: relative;
-    width: 70%;
-    float: left;
-    padding-top: 2rem;
-    justify-content: center;
-  }
+a {
+  text-decoration: none;
+  color: #3d1101;
+}
 
-  .searchbar {
-    width: 50%;
-    height: 32px;
-    font-size: 20px;
-    border: 3px solid #3d1101;
-    background-color: #efe9e7;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
+.search {
+  position: relative;
+  width: 70%;
+  float: left;
+  padding-top: 2rem;
+  justify-content: center;
+}
 
-  .searchbtn {
-    width: 36px;
-    height: 32px;
-    background-color: #3d1101;
-    color: #efe9e7;
-    outline: none;
-    border: 2px solid #3d1101;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 6px;
-    cursor: pointer;
-    position: relative;
-    justify-content: center;
-    top: 0;
-    right: 0;
-  }
+.searchbar {
+  width: 50%;
+  height: 32px;
+  font-size: 20px;
+  border: 3px solid #3d1101;
+  background-color: #efe9e7;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.searchbtn {
+  width: 36px;
+  height: 32px;
+  background-color: #3d1101;
+  color: #efe9e7;
+  outline: none;
+  border: 2px solid #3d1101;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 6px;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  top: 0;
+  right: 0;
+}
