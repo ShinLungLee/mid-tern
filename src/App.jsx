@@ -1,4 +1,5 @@
 import './App.css';
+import Category from './pages/Category';
 import Home from './pages/Home'
 import Product from './pages/Product';
 import 'antd/dist/reset.css';
@@ -10,7 +11,7 @@ function App() {
       <Routes>
        <Route path="/" element={<Home />} />
         <Route path="products">
-         <Route path="category/:categoryName" element={<Home />} />
+         <Route path="category/:categoryName" element={<Category />} />
          <Route path="id/:productId" element={<Product />} />
         </Route>
       </Routes>
