@@ -37,7 +37,7 @@ export default function CarModal({isOpen, toggleModal}) {
                 <div className={style.content}>
                   <div className={style.name}>{item.name}</div>
                   <div>
-                  Qty:{"  "}
+                  數量:{"  "}
                   <Select 
                     defaultValue={item.qty}
                     className="select-style"

@@ -6,11 +6,11 @@ import products from "../json/products.json"
 
 function Home() {
   return (
-    <div className="container main-layout">
+    <div className="main-layout">
       <Header 
         logo="Concis" 
         />       
-      <ProductList products={products} className="layout-content" />
+      <ProductList products={products} />
       <Footer 
         customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />
     </div>

@@ -3,6 +3,7 @@ import ProductItem from '../ProductItem';
 
 export default function ProductList({products}){
     return(
+      <div className="container">
         <Row gutter={[32, 32]}>
             {products.map(product => (
         <Col 
@@ -16,5 +17,6 @@ export default function ProductList({products}){
         </Col>
       ))}
     </Row>
+    </div>
     );
 }
