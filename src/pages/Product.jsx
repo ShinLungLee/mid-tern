@@ -14,8 +14,8 @@ function Product() {
             <Header
                 logo="Concis"
             />
-
-            <ProductDetail product={product} className="layout-content" />
+            <div className="layout-content container">
+            <ProductDetail product={product}/></div>
             <Footer
                 customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />
         </div>
