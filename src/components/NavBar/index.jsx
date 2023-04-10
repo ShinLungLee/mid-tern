@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styles from './navbar.module.css';
+import { Drawer } from 'antd';
 
-export default function NavBar() {
-    return (
-        <div className={styles.navBar}>
+export default function NavBar({ open, onClose }) {
+
+    const NavBarContent = () => (
+        <>
             <NavLink to="/"
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 所有分類
@@ -40,6 +42,24 @@ export default function NavBar() {
                 className={({ isActive }) => (isActive ? styles.navItemActive : styles.navItem)}>
                 休閒旅遊
             </NavLink>
-        </div>
+        </>
+    )
+
+    return (
+        <>
+            <div className={styles.navBar}>
+                <NavBarContent />
+            </div>
+            <Drawer
+                placement="left"
+                onClose={onClose}
+                open={open}
+            >
+                <div className={styles.drawer}>
+                    <NavBarContent />
+                </div>
+            </Drawer>
+        </>
+
     );
 }

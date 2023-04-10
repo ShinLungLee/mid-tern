@@ -1,14 +1,16 @@
-import { Link } from "react-router-dom"
+import { useState } from "react";
 import NavBar from "../NavBar";
 import styles from "./header.module.css";
 import '../../App.css';
 import CarSummary from "../CarSummary";
 import MemberSummary from "../MemberSummary";
-
+import HamburgerMenu from "../HamburgerMenu";
 export default function Header({ logo }) {
+    const [isOnTouch, setIsOnTouch] = useState(false);
     return (
         <div>
         <div className={styles.header}>
+
                 <h1 className={styles.headerlogo}>
                     {logo}
                 </h1>
@@ -21,7 +23,11 @@ export default function Header({ logo }) {
             <MemberSummary />
             <CarSummary />
         </div>
-        <NavBar/>
+        <HamburgerMenu
+                onClick={() => setIsOnTouch(!isOnTouch)}
+                isOnTouch={isOnTouch}
+            />
+        <NavBar open={isOnTouch} onClose={() => setIsOnTouch(false)}/>
         </div>
     );
 }
