@@ -13,11 +13,11 @@ function Category() {
     
 
   return (
-    <div className="main-layout">
+    <div className="main-layout ">
       <Header 
         logo="Concis" 
         />       
-      <ProductList products={_products} className="layout-content" />
+      <div className="layout-content container"><ProductList products={_products}/></div>
       <Footer 
         customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />
     </div>
