@@ -9,9 +9,9 @@ export default function ProductList({products}){
         <Col 
           key={product.id} 
           sm={{ span: 12 }} 
-          lg={{ span: 8 }}
-          xl={{ span: 6 }}
-          xxl={{ span: 4 }}
+          lg={{ span: 12 }}
+          xl={{ span: 12 }}
+          xxl={{ span: 16 }}
         >
           <ProductItem product={product}/>
         </Col>

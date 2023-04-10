@@ -10,7 +10,7 @@ function Product() {
     );
 
     return (
-        <div className="container main-layout">
+        <div className="main-layout">
             <Header
                 logo="Concis"
             />
