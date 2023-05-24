@@ -59,3 +59,11 @@ body {
   background-color: #efe9e7;
   border-radius: 10px;
 }
+
+.contentStyle {
+  height: 160px;
+  color: fff;
+  height: 160px;
+  align-items: center;
+  background: #364d79;
+}
