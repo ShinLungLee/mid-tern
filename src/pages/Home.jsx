@@ -2,7 +2,7 @@ import Header from "../components/Header"
 import ProductList from "../components/ProductList"
 import Footer from "../components/Footer"
 import CarouselList from "../components/Carousellist"
-import { useProducts,useProductsByCategory,useProductsById } from "../react-query"
+import { useProducts} from "../react-query"
 
 function Home() {
   const {data , isLoading } =useProducts();

@@ -11,7 +11,7 @@ export const useProductsByCategory = (category) => {
     return {data , isLoading};
 };
 
-export const useProductsById = (productId) => {
+export const useProductById = (productId) => {
     const{data , isLoading} = useQuery( [productId],getProductById)
     return {data , isLoading};
 };

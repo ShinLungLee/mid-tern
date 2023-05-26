@@ -3,21 +3,22 @@ import _ from 'lodash';
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 import ProductList from "../components/ProductList";
-import products from "../json/products.json";
+
+import { useProductsByCategory } from '../react-query';
 
 function Category() {
   const { categoryName } = useParams();
-  const _products = products.filter(
-        x => x?.category.toUpperCase() === categoryName.toUpperCase()
-      );
-    
+  const { data, isLoading } = useProductsByCategory(categoryName);
+  const products = data || [];
+  const title = _.startCase(categoryName);  
 
   return (
     <div className="main-layout ">
+      <title>{title}</title>
       <Header 
         logo="Concis" 
         />       
-      <div className="layout-content container"><ProductList products={_products}/></div>
+      <div className="layout-content container"><ProductList products={products} isLoading={isLoading}/></div>
       <Footer 
         customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />
     </div>

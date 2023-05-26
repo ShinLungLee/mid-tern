@@ -34,14 +34,15 @@ export const feedProducts = async () => {
 };
 
 //取得firebase裡的products物件(陣列)ById
-export const getProductById = async (id) => {
+export const getProductById = async ({queryKey}) => {
+  const [id] = queryKey;
   const docRef = await doc(db, "products", id);
   const docSnap = await getDoc(docRef);
   return docSnap.data();
 };
 //取得firebase裡的products物件(陣列)ByCategory
-export const getProductsByCategory = async (category) => {
-  // Create a query against the collection.
+export const getProductsByCategory = async ({queryKey}) => {// Create a query against the collection.
+  const [category] = queryKey;
   const q = await query(productsCollection, where("category", "==", category.toUpperCase()));
   const querySnapshot = await getDocs(q);
   // Convert query to a json array.
