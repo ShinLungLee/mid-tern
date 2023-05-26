@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
+    "@tanstack/react-query": "^4.29.7",
     "antd": "^5.4.0",
     "firebase": "^9.22.0",
     "lodash": "^4.17.21",

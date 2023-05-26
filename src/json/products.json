@@ -1,6 +1,6 @@
 [
   {
-    "id": "1frfm4",
+    "id": "1",
     "category": "手機通訊",
     "name": "耳機",
     "sku": "sku_313355",
@@ -11,7 +11,7 @@
     "countInStock":5
   },
   {
-    "id": "IuLME5",
+    "id": "2",
     "category": "電玩遊戲",
     "name": "搖桿",
     "sku": "sku_313356",
@@ -22,7 +22,7 @@
     "countInStock":5
   },
   {
-    "id": "fcO39y",
+    "id": "3",
     "category": "衣物配件",
     "name": "素色上衣",
     "sku": "sku_622147",
@@ -33,7 +33,7 @@
     "countInStock":5
   },
   {
-    "id": "lUV79n",
+    "id": "4",
     "category": "生活居家",
     "name": "桌子",
     "sku": "sku_125983",
@@ -44,7 +44,7 @@
     "countInStock":5
   },
   {
-    "id": "J8B6Lr",
+    "id": "5",
     "category": "公仔玩具",
     "name": "鯊魚玩偶",
     "sku": "sku_559961",
@@ -55,7 +55,7 @@
     "countInStock":5
   },
   {
-    "id": "9V4t3e",
+    "id": "6",
     "category": "電腦電子",
     "name": "麵包板",
     "sku": "sku_119140",
@@ -66,7 +66,7 @@
     "countInStock":5
   },
   {
-    "id": "nfogfp",
+    "id": "7",
     "category": "書籍雜誌",
     "name": "網頁工具書",
     "sku": "sku_119140",
@@ -77,7 +77,7 @@
     "countInStock":5
   },
   {
-    "id": "poejp5",
+    "id": "8",
     "category": "休閒旅遊",
     "name": "油燈",
     "sku": "sku_119140",

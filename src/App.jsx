@@ -6,23 +6,28 @@ import 'antd/dist/reset.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Provider } from "react-redux";
 import store from './redux/store';
+import {QueryClient,QueryClientProvider} from '@tanstack/react-query'
 
 // import { feedProducts } from './api';
 // feedProducts();
 
 function App() {
+
+  const queryClient = new QueryClient();
   return (
-    <Provider store={store}>
-    <BrowserRouter>
-      <Routes>
-       <Route path="/" element={<Home />} />
-        <Route path="products">
-         <Route path="category/:categoryName" element={<Category />} />
-         <Route path="id/:productId" element={<Product />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    </Provider>  
+    <QueryClientProvider client={queryClient}>
+      <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+        <Route path="/" element={<Home/>} />
+          <Route path="products">
+          <Route path="category/:categoryName" element={<Category />} />
+          <Route path="id/:productId" element={<Product />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      </Provider> 
+    </QueryClientProvider> 
   );
 }
 export default App;
