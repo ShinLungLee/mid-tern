@@ -9,7 +9,7 @@ import store from './redux/store';
 import {QueryClient,QueryClientProvider} from '@tanstack/react-query'
 
 // import { feedProducts } from './api';
-// feedProducts();
+// feedProducts(); QQ
 
 function App() {
 

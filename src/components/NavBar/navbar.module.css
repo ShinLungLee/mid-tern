@@ -4,9 +4,9 @@
     display: none;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem 0;
     max-height: auto;
+    background-color: #fff;
 }
 
 .drawer {
@@ -19,6 +19,7 @@
     display: flex;
     font-size: 1rem;
     margin-bottom: 1rem;
+    padding: 0.5rem;
     margin-left: 1rem;
     cursor: pointer;
     color: rgb(2, 2, 2);
@@ -26,6 +27,7 @@
     text-decoration: none;
     transition: all 0.5s ease-in-out;
     border-style: solid;
+    border-radius: 0.5rem;
 }
 
 .navItem:hover {
