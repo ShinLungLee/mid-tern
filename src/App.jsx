@@ -2,6 +2,8 @@ import './App.css';
 import Category from './pages/Category';
 import Home from './pages/Home'
 import Product from './pages/Product';
+import Login from './pages/login';
+import Register from './pages/Register';
 import 'antd/dist/reset.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Provider } from "react-redux";
@@ -20,9 +22,11 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path="/" element={<Home/>} />
-          <Route path="products">
-          <Route path="category/:categoryName" element={<Category />} />
-          <Route path="id/:productId" element={<Product />} />
+          <Route exact path="/:login" element={<Login />} />     
+          <Route exact path="/signup" element={<Register />} />
+            <Route path="products">
+            <Route path="category/:categoryName" element={<Category />} />
+            <Route path="id/:productId" element={<Product />} />
           </Route>
         </Routes>
       </BrowserRouter>
