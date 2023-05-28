@@ -4,4 +4,8 @@
    padding: 0.5rem 2rem;
    font-weight: 300;
    text-transform: uppercase;
+   background-color: rgb(127, 71, 160);
+}
+.btn:hover{
+   background-color: rgb(115, 81, 135);
 }

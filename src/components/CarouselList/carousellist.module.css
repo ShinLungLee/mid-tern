@@ -1,7 +1,17 @@
-.content {
-   height: 160px;
-   color: fff;
-   height: 160px;
-   align-items: center;
-   background: #364d79;
+.item {
+    background-color: rgb(54, 17, 88);
+    border-radius: 1%;
+    border: solid gray 1px;
+    padding: 0;
  }
+ 
+ .info {
+    padding: 1.2rem;
+    background-color: rgb(108, 66, 133);
+ }
+ 
+ .name {
+    color: white;
+    margin-bottom: 0.3rem;
+ }
+ 

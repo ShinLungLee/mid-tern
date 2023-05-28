@@ -1,25 +1,36 @@
 import { Carousel } from "antd";
-import styles from './carousellist.module.css'
-import ProductItem from '../ProductItem';
+import { Link } from 'react-router-dom';
+import style from "./carousellist.module.css"
 
-export default function CarouselList({products}){
-  const contentStyle = {height: '160px',color: '#fff',lineHeight: '160px',textAlign: 'center',background: '#364d79',};
-    return(
-      <div>
-        <Carousel autoplay>
-        <div>
-          <h3 style={contentStyle}>1</h3>
+export default function CarouselList({ products }) {
+  return (
+    <Carousel autoplay>
+      {products.map(product => (
+        <div key={product.id}>
+          <div className={style.item}>
+            <Link to={`/products/id/${product.id}`}>
+            <div className={style.info}>
+              <img
+                style={{
+                  backgroundSize: 'contain',
+                  backgroundRepeat: 'no-repeat',
+                  display: 'block',
+                  margin: '0 auto',
+                  width: 'auto',
+                  height: '300px'
+                }}
+                src={product.image}
+                alt={product.name}
+              />
+              
+                <h2 className={style.name}>
+                  {product.name}
+                </h2>
+             </div>
+            </Link>
+          </div>
         </div>
-        <div>
-          <h3 style={contentStyle}>2</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>3</h3>
-        </div>
-        <div>
-          <h3 style={contentStyle}>4</h3>
-        </div>
-        </Carousel>
-      </div>  
-    );
+      ))}
+    </Carousel>
+  );
 }

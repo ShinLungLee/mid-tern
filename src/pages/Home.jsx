@@ -1,7 +1,7 @@
 import Header from "../components/Header"
 import ProductList from "../components/ProductList"
 import Footer from "../components/Footer"
-import CarouselList from "../components/Carousellist"
+import CarouselList from "../components/CarouselList"
 import { useProducts} from "../react-query"
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
         logo="Concis" 
         />       
       <div className="layout-content container">
-        <CarouselList/>
+        <CarouselList products={products}/>
         <ProductList products={products} isLoading={isLoading} /></div>
       <Footer 
         customerservice="客服專線 02-0000-1234   服務時間 1000-1900 copyright ------------" />

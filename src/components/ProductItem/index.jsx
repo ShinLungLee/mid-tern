@@ -11,7 +11,7 @@ export default function ProductItem({ product }) {
                style={{ width: '100%' }}
                src={product.image}
                alt={product.name} />
-         </Link>
+         
          <div className={style.info}>
             <h6 className={style.category}>
                {product.category}
@@ -23,6 +23,7 @@ export default function ProductItem({ product }) {
                NTD {product.price}.00
             </span>
          </div>
+         </Link>
       </div>
    );
 }
