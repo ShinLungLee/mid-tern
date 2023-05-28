@@ -1,0 +1,106 @@
+
+  .logcontainer{
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    background-color: #f8be78;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logheader{
+    padding-top: 3px;
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.logheaderTitle{
+  line-height: 30px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:40px; 
+  font-weight: bold;
+  color: rgb(118, 39, 192);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.logblock{
+  justify-content: center;
+
+}
+
+.containerForm{
+  justify-content: center;
+}
+.containerOverlay{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 20%;
+  justify-content: center;
+  flex-direction: row;
+}
+.overlay{
+
+  display: flex;
+}
+.form {
+  position: relative;
+  width: 100%;
+  float: left;
+  padding-top: 2rem;
+  justify-content: center;
+  background-color: #f8be78;
+  padding-left: 20%;
+  margin-bottom: 10px;
+}
+.formTitle{
+  font-weight: bold;
+}
+.button-display{
+  width: auto;
+  height: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: bold;
+  list-style: none;
+  background-color: #eff3cb;
+  border:3px rgb(43, 121, 43) double;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.button-display:hover{
+  background-color: #c2c5a5;
+}
+
+.button{
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+.input{
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1; /* 1 */
+  margin: 10px; /* 2 */
+}
+.button{ /* 1 */
+  text-transform: none;
+}
+.btn{
+  width: 20%;
+  background-color:#faecdf;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.signupbtn{
+  width: 20%;
+  background-color:#ffe4c4;
+  border-radius: 5px;
+  margin-left: 20%;
+  cursor: pointer;
+}
