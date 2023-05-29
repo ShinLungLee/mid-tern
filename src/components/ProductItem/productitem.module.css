@@ -1,6 +1,6 @@
 .item {
-   background-color: rgb(54, 17, 88);
-   border: solid gray 1px;
+   border-radius: 1rem;
+   border: dotted yellow 0.2rem;
    padding: 0;
    overflow: hidden; /* 添加 overflow 屬性 */
 }
@@ -12,12 +12,13 @@
 
 .info {
    padding: 1.2rem;
-   background-color: rgb(108, 66, 133);
+   background: radial-gradient(ellipse farthest-corner at 0 85%,
+   rgba(242, 33, 242, 0.855) 1%, rgba(255, 188, 255, 0.597) 50%, beige);
 }
 
 .category {
-   color: white;
-   opacity: 0.4;
+   color: rgb(242, 33, 242);
+   opacity: 0.8;
    margin-bottom: 0.2rem;
 }
 

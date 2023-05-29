@@ -1,7 +1,12 @@
 colorsIUse{
-  color: rgb(255, 197, 255) rgb(242, 33, 242);
+  color: rgb(255, 197, 255) rgb(242, 33, 242) rgb(255, 251, 197);
 }
 
+@media (max-width: 768px) {
+  .headerlogo {
+    margin-left: 3rem;
+  }
+}
 
 .header {
   width: 100%;

@@ -1,28 +1,32 @@
 .item {
-    background-color: none;
-    border-radius: 1%;
-    padding: 0;
-    border-radius: 3rem;
-    padding-bottom: 1rem;
- }
- 
- .info {
-    padding: 1.2rem;
-    background-color: rgb(108, 66, 133);
-    border-radius: 3rem;
-    padding-bottom: 1rem;
- }
- 
- .name {
-    color: white;
-    margin-bottom: 0.3rem;
- }
+   background-color: none;
+   border-radius: 1%;
+   padding: 0;
+   border-radius: 3rem;
+   padding-bottom: 1rem;
+}
 
- .image {
-   @media (max-width: 576px) {
-     width: 100%;
-     height: auto;
-   }
+.info {
+   padding: 1.2rem;
+   border-radius: 3rem;
+   padding-bottom: 1rem;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 252, 233, 0.5)), url(../../../public/images/BGI.png);
+   /* 其他 CSS 屬性 */
  }
  
  
+
+.name {
+   color: white;
+   margin-bottom: 0.3rem;
+   text-align: center;
+}
+
+.image {
+   @media (max-width: 576px) {
+      width: 100%;
+      height: auto;
+   }
+}

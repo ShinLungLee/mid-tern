@@ -35,7 +35,8 @@ export default function CarouselList({ products }) {
                   display: 'block',
                   margin: '0 auto',
                   width: 'auto',
-                  height: '300px'
+                  height: '300px',
+                  borderRadius: '3rem'
                 }}
                 src={product.image}
                 alt={product.name}
