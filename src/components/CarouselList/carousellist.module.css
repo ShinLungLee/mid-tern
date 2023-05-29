@@ -1,13 +1,16 @@
 .item {
-    background-color: rgb(54, 17, 88);
+    background-color: none;
     border-radius: 1%;
-    border: solid gray 1px;
     padding: 0;
+    border-radius: 3rem;
+    padding-bottom: 1rem;
  }
  
  .info {
     padding: 1.2rem;
     background-color: rgb(108, 66, 133);
+    border-radius: 3rem;
+    padding-bottom: 1rem;
  }
  
  .name {

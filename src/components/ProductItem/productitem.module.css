@@ -1,27 +1,32 @@
 .item {
-    background-color: rgb(54, 17, 88);
-    border-radius: 1%;
-    border: solid gray 1px;
-    padding: 0;
- }
- 
- .info {
-    padding: 1.2rem;
-    background-color: rgb(108, 66, 133);
- }
- 
- .category {
-    color: white;
-    opacity: 0.4;
-    margin-bottom: 0.2rem;
- }
- 
- .name {
-    color: white;
-    margin-bottom: 0.3rem;
- }
- 
- .textGray {
-    color: white;
-    opacity: 0.6;
- }
+   background-color: rgb(54, 17, 88);
+   border: solid gray 1px;
+   padding: 0;
+   overflow: hidden; /* 添加 overflow 屬性 */
+}
+
+.item img:hover {
+   transform: scale(1.1); /* 添加放大圖片的 transform 屬性 */
+   transition: 0.5s;
+}
+
+.info {
+   padding: 1.2rem;
+   background-color: rgb(108, 66, 133);
+}
+
+.category {
+   color: white;
+   opacity: 0.4;
+   margin-bottom: 0.2rem;
+}
+
+.name {
+   color: white;
+   margin-bottom: 0.3rem;
+}
+
+.textGray {
+   color: white;
+   opacity: 0.6;
+}

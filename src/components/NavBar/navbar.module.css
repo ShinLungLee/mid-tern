@@ -4,9 +4,9 @@
     display: none;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1rem 0;
+    padding: 1rem 0;margin-bottom: 1rem;
     max-height: auto;
-    background-color: #fff;
+    background-color: rgb(255, 197, 255);
 }
 
 .drawer {
@@ -22,25 +22,27 @@
     padding: 0.5rem;
     margin-left: 1rem;
     cursor: pointer;
-    color: rgb(2, 2, 2);
     opacity: 0.6;
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border-style: solid;
     border-radius: 0.5rem;
+    border-color: rgb(255, 251, 197);
+    background-color: rgb(255, 239, 217);
+    color: black;
+    font-weight:bold;
 }
 
 .navItem:hover {
-    color: rgb(102, 102, 102);
     opacity: 1;
     text-shadow: 0px 0px 30px white;
-    background-color: rgb(255, 253, 253);
+    background-color: rgb(255, 251, 197);
 }
 
 .navItemActive {
     composes: navItem;
     opacity: 1;
-    background-color: rgba(255, 228, 196, 0.753);
+    background-color: rgb(255, 251, 197);
 }
 
 @media (min-width: 768px) {
@@ -53,7 +55,6 @@
     }
 
     .navItem {
-        color: rgb(2, 2, 2);
         font-size: 1rem;
         margin-bottom: 0;
         margin-left: 0;
@@ -61,6 +62,6 @@
     }
 
     .navItem:hover {
-        color: rgb(102, 102, 102);
+        color: rgb(198, 22, 198);
     }
 }

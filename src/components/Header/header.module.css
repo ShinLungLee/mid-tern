@@ -1,16 +1,21 @@
+colorsIUse{
+  color: rgb(255, 197, 255) rgb(242, 33, 242);
+}
+
+
 .header {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  background-color: #efc898;
+  background: linear-gradient(yellow, rgb(255, 197, 255));
   text-align: center;
 }
 
 .headerlogo {
   position: relative;
   font-size: 3em;
-  color: rgb(105, 23, 182);
+  color: rgb(242, 33, 242);
   font-family: Georgia, Helvetica, Impact;
   padding: 0 0 0 5%;
   padding-top: 1rem;
@@ -18,7 +23,11 @@
 
 a {
   text-decoration: none;
-  color: #3d1101;
+  color: rgb(242, 33, 242);
+}
+a:visited{
+  text-decoration: none;
+  color: rgb(242, 33, 242);
 }
 
 .search {
@@ -33,25 +42,34 @@ a {
   width: 50%;
   height: 32px;
   font-size: 20px;
-  border: 3px solid #3d1101;
-  background-color: #efe9e7;
+  border: 3px solid rgb(242, 33, 242);
+  background-color: beige;
+  color: rgb(242, 33, 242); 
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 .searchbtn {
   width: 36px;
   height: 32px;
-  background-color: #3d1101;
+  background-color: rgb(242, 33, 242);
   color: #efe9e7;
   outline: none;
-  border: 2px solid #3d1101;
+  border: 2px solid rgb(255, 73, 255);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-top: 6px;
   cursor: pointer;
   position: relative;
   justify-content: center;
-  top: 0;
+  top: 1px;
   right: 0;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }

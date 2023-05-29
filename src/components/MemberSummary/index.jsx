@@ -8,7 +8,7 @@ export default function MemberSummary() {
   return (
     <nav  className={styles.memberSummary}>
       <Link to='/:login'>
-      <MemberIcon size={36} color={colorTextBase} />
+      <MemberIcon size={36} color="rgb(242, 33, 242)" />
         <p className={styles.MemberText}> 會員 </p>
       </Link>
     </nav>

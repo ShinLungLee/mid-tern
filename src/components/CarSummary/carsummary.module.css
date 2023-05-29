@@ -13,7 +13,7 @@
     font-size: 1rem;
     opacity: 1;
     margin-top: -2px;
-
+    color: rgb(242, 33, 242);
   }
  
   @media (min-width: 768px) {
