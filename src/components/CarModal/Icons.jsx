@@ -7,7 +7,7 @@ export function CarIcon({ size, color }) {
             height={size}
             viewBox="0 0 576 512">
 
-            <path fill="none" stroke={color} strokeLinecap="square" strokeWidth="1.5"
+            <path fill="none" stroke={color} strokeLinecap="square" strokeWidth="10"
                 d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8
              50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 
              31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 

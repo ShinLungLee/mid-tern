@@ -7,5 +7,5 @@
    background-color: rgb(127, 71, 160);
 }
 .btn:hover{
-   background-color: rgb(115, 81, 135);
+   background-color: rgb(115, 81, 135) !important;
 }
