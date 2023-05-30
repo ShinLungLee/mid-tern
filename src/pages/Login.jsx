@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import Signin from "../components/SignIn"
+import Signin from "../components/Signin"
 
 
 function Login() {
